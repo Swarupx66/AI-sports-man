@@ -1,0 +1,5 @@
+const myCarousel = document.querySelector('#heroCarousel');
+const carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 4000, // Auto slide every 4 seconds
+  ride: 'carousel'
+});

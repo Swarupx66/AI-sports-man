@@ -1,0 +1,169 @@
+
+    .carousel-item {
+      height: 100vh; /* Full screen height */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    /* Black overlay */
+    .carousel-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    /* Content styling */
+    .carousel-caption {
+      z-index: 2;
+    }
+    .carousel-caption h1 {
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    .carousel-caption p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+    /* Full height and background settings */
+.carousel-item {
+  height: 100vh; /* Full screen height */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Black overlay */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Content styling */
+.carousel-caption {
+  z-index: 2;
+}
+
+.carousel-caption h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+/* Service cards hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon styling */
+.card i {
+  font-size: 3rem;
+}
+/* Project section spacing */
+.project-section {
+  padding: 60px 0;
+}
+
+/* Tab content image grid */
+.project-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Image styling */
+.project-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Hover overlay */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Show overlay on hover */
+.project-item:hover .project-overlay {
+  opacity: 1;
+}
+
+/* Slight zoom on hover */
+.project-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Staggered layout effect */
+.project-row .project-item:nth-child(2) {
+  transform: translateY(-20px);
+}
+
+.project-row .project-item:nth-child(1),
+.project-row .project-item:nth-child(3) {
+  transform: translateY(10px);
+}
+footer {
+  background-color: #111;
+  color: #ddd;
+  font-size: 15px;
+}
+
+footer h5 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: #ddd;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #ffb400;
+  text-decoration: none;
+}
+
+footer .btn-outline-light {
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+footer .btn-outline-light:hover {
+  background-color: #ffb400;
+  border-color: #ffb400;
+  color: #111;
+}
+
+footer hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}

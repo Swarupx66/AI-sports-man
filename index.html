@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bootstrap Navbar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    
+    <!-- Logo on left -->
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="Logo" height="40">
+    </a>
+
+    <!-- Hamburger button for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Center Navigation -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+
+        <!-- Dropdown for Our Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="#">Service 1</a></li>
+            <li><a class="dropdown-item" href="#">Service 2</a></li>
+            <li><a class="dropdown-item" href="#">Service 3</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<!-- Hero Slider -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" style="background-image: url('cricket');">
+      <div class="carousel-caption text-center">
+        <h1>NANI WEBSITE</h1>
+        <p>TO KNOW WHO CAN PLAY CRICKET. IN ARTIFICAL INTELIGENCE AND MACHINE LEARING BRANCH.</p>
+        <a href="#" class="btn btn-primary btn-lg">AI&ML</a>
+      </div>
+    </div>
+
+    <div class="carousel-item" style="background-image: url('cricket');">
+      <div class="carousel-caption text-center">
+        <h1>NANI WEBSITE</h1>
+        <p>PERFECT SHOT PLAYERS.</p>
+        <a href="#" class="btn btn-primary btn-lg">SEE</a>
+      </div>
+    </div>
+
+    <div class="carousel-item" style="background-image: url('cricket');">
+      <div class="carousel-caption text-center">
+        <h1>NANI WEBSITE</h1>
+        <p>WINNERS OF THE MATCH.</p>
+        <a href="#" class="btn btn-primary btn-lg">SEE</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Side -->
+      <div class="col-lg-6">
+        <!-- Small Heading -->
+        <h6 class="text-primary mb-3">About Us</h6>
+
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs mb-3" id="aboutTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="agency-tab" data-bs-toggle="tab" data-bs-target="#agency" type="button" role="tab">Our Agency</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab">Our Mission</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab">Our Vision</button>
+          </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" id="aboutTabsContent">
+          <!-- Agency Tab -->
+          <div class="tab-pane fade show active" id="agency" role="tabpanel">
+            <h3>We are a Leading Agency</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae dolor vitae mauris volutpat pretium non sed arcu.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+          <!-- Mission Tab -->
+          <div class="tab-pane fade" id="mission" role="tabpanel">
+            <h3>Our Mission</h3>
+            <p>Our mission is to deliver innovative solutions that drive success for our clients worldwide, while maintaining excellence.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+          <!-- Vision Tab -->
+          <div class="tab-pane fade" id="vision" role="tabpanel">
+            <h3>Our Vision</h3>
+            <p>We envision a future where businesses thrive through creativity, technology, and strategic thinking.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-lg-6 text-center">
+        <img src="cricket" alt="About Us" class="img-fluid rounded shadow">
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-light">
+  <div class="container text-center">
+
+    <!-- Section Heading -->
+    <h2 class="mb-3">Our Services</h2>
+    <p class="mb-5 text-muted">
+      We offer a wide range of services to help you achieve your goals. From planning to execution, our expert team ensures your projects succeed with precision, quality, and innovation tailored to your needs.
+    </p>
+
+    <!-- Services Row -->
+    <div class="row g-4">
+
+      <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <i class="bi bi-briefcase-fill text-primary"></i>
+            </div>
+            <h5 class="card-title mb-3">Service 1</h5>
+            <p class="card-text text-muted">
+              We provide top-notch solutions for businesses, ensuring efficiency and long-term growth.
+            </p>
+            <a href="#" class="btn btn-primary mt-3">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <i class="bi bi-gear-fill text-success"></i>
+            </div>
+            <h5 class="card-title mb-3">Service 2</h5>
+            <p class="card-text text-muted">
+              Our innovative approach brings creativity and precision to every project we handle.
+            </p>
+            <a href="#" class="btn btn-primary mt-3">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <i class="bi bi-lightbulb-fill text-warning"></i>
+            </div>
+            <h5 class="card-title mb-3">Service 3</h5>
+            <p class="card-text text-muted">
+              We turn ideas into reality, helping you stand out in a competitive market.
+            </p>
+            <a href="#" class="btn btn-primary mt-3">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="project-section container">
+  <h2 class="text-center mb-3">Our Projects</h2>
+  <p class="text-center mb-5">Explore our latest work in videos, plays, and more. Each project reflects our creativity and passion.</p>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs justify-content-center mb-4" id="projectTabs" role="tablist">
+    <li class="nav-item">
+      <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button">All</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video" type="button">Video</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="play-tab" data-bs-toggle="tab" data-bs-target="#play" type="button">Play</button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content" id="projectTabsContent">
+    <!-- All Projects -->
+    <div class="tab-pane fade show active" id="all">
+      <div class="row project-row">
+        <div class="col-md-4 project-item">
+          <img src="img1.jpg" alt="Project 1">
+          <div class="project-overlay">Project 1</div>
+        </div>
+        <div class="col-md-4 project-item">
+          <img src="img2.jpg" alt="Project 2">
+          <div class="project-overlay">Project 2</div>
+        </div>
+        <div class="col-md-4 project-item">
+          <img src="img3.jpg" alt="Project 3">
+          <div class="project-overlay">Project 3</div>
+        </div>
+      </div>
+
+      <div class="row project-row mt-4">
+        <div class="col-md-4 project-item">
+          <img src="img4.jpg" alt="Project 4">
+          <div class="project-overlay">Project 4</div>
+        </div>
+        <div class="col-md-4 project-item">
+          <img src="img5.jpg" alt="Project 5">
+          <div class="project-overlay">Project 5</div>
+        </div>
+        <div class="col-md-4 project-item">
+          <img src="img6.jpg" alt="Project 6">
+          <div class="project-overlay">Project 6</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Tab -->
+    <div class="tab-pane fade" id="video">
+      <div class="row project-row">
+        <div class="col-md-4 project-item">
+          <img src="video1.jpg" alt="Video 1">
+          <div class="project-overlay">Video 1</div>
+        </div>
+        <div class="col-md-4 project-item">
+          <img src="video2.jpg" alt="Video 2">
+          <div class="project-overlay">Video 2</div>
+        </div>
+        <div class="col-md-4 project-item">
+          <img src="video3.jpg" alt="Video 3">
+          <div class="project-overlay">Video 3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Play Tab -->
+    <div class="tab-pane fade" id="play">
+      <div class="row project-row">
+        <div class="col-md-4 project-item">
+          <img src="virat" alt="Play 1">
+          <div class="project-overlay">Play 1</div>
+        </div>
+        <div class="col-md-4 project-item">
+          <img src="rohith" alt="Play 2">
+          <div class="project-overlay">Play 2</div>
+        </div>
+        <div class="col-md-4 project-item">
+          <img src="hardik" alt="Play 3">
+          <div class="project-overlay">Play 3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Auto Slide Script -->
+<script>
+  const myCarousel = document.querySelector('#heroCarousel');
+  const carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 4000,
+    ride: 'carousel'
+  });
+</script>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
